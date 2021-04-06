@@ -4,15 +4,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 25vh;
 
   /* Visual */
   background: var(--background);
   color: var(--text2);
 }
-.footerStyles img {
-  height: 5rem;
-  width: 5rem;
+.footerStyles div {
+  margin-bottom: 3rem;
+}
+.footerStyles div svg{
+  font-size: 4rem;
+  margin: 2rem;
+  opacity: .3;
 }
 .footerStyles p {
   display: flex;
