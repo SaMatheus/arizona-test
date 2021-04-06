@@ -1,0 +1,27 @@
+.footerStyles {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+
+  /* Visual */
+  background: var(--background);
+  color: var(--text2);
+}
+.footerStyles img {
+  height: 5rem;
+  width: 5rem;
+}
+.footerStyles p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerStyles svg {
+  margin-right: .3rem;
+}
+.footerStyles p strong {
+  margin-left: .3rem;
+}

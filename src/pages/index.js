@@ -17,6 +17,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 // DATA
 import particularsData from '../data/particularsData';
 import testimonialData from '../data/testimonialData';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -105,7 +106,7 @@ export default function Home() {
       <section className={styles.particularsGridContainer}>
         {particularsData.map(item => {
           return (
-            <div className={styles.item}>
+            <div key={item.id} className={styles.item}>
               <img src={item.img} alt=""/>
               <h2>{item.title}</h2>
               <p>{item.description}</p>
@@ -161,7 +162,7 @@ export default function Home() {
           <img src="/icons/Email.svg" onClick={handleSubmit}/>
         </label>
       </section>
-      <section></section>
+      <Footer />
     </>
   )
 }
