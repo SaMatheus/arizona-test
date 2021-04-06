@@ -38,6 +38,17 @@ section {
   width: 100%;
 }
 
+/* Default */
+h1 {
+  /* Tipography */
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  /* Visual */
+  color: var(--primary);
+}
+
 a,
 ul,
 li {

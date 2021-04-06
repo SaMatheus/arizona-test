@@ -22,15 +22,6 @@
   /* Position */
   transform: translateX(15rem);
 }
-.contentBox h1 {
-  /* Tipography */
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
-  /* Visual */
-  color: var(--primary);
-}
 .contentBox p {
   /* Box Model */
   width: 75%;
@@ -77,4 +68,83 @@
   /* Visual */
   filter: grayscale(0);
   opacity: 1;
+}
+
+/* Main Container */
+.mainContainer {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10rem;
+  padding: 8rem 20rem;
+}
+
+.leftContent  {
+  /* Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.rightContent {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+  align-items: flex-start;
+  width: 60%;
+}
+.rightContent > p {
+  /* Box Model */
+  margin-top: 2rem;
+}
+.rightContent p {
+  /* Box Model */
+  width: 100%;
+
+  /* Tipography */
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+
+  /* Visual */
+  color: var(--text2);
+}
+
+.appParticulars {
+  /* Box Model */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+  width: 100%;
+  padding: 4rem 0;
+}
+.appParticulars div {
+  /* Box Model */
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.appParticulars div img {
+  justify-self: center;
+}
+
+.buttons {
+  /* Box Model */
+  display: flex;
+  align-items: center;
+}
+.buttons a {
+  /* Box Model */
+  margin-left: 4rem;
+
+  /* Tipography */
+  font-size: 1.5rem;
+
+  /* Visual */
+  color: var(--primary);
 }
