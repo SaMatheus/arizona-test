@@ -61,6 +61,12 @@ button {
   cursor: pointer;
 }
 
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
 @media screen and (max-width: 1400px) {
   html,
   body {
