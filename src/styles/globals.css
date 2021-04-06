@@ -19,11 +19,12 @@ body {
   --primary: #525252;
   --text2: #a3a2a3;
   --green: #42be7c;
+  --dark-green: #47ad77;
   --background: #E5E5E5;
 }
 
 section {
-  padding: 3rem 135px;
+  padding: 2rem 20rem;
   height: 100%;
   width: 100%;
 }
@@ -47,17 +48,17 @@ button {
   }
 
   section {
-    padding: 0 100px;
+    padding: 2rem 15rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   section {
-    padding: 0 80px;
+    padding: 2rem 10rem;
   }
 }
 @media screen and (max-width: 1080px) {
   section {
-    padding: 0 40px;
+    padding: 2rem 5rem;
   }
 }

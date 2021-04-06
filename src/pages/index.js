@@ -1,8 +1,13 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// STYLES
+import styles from '../styles/pages/Home.module.css'
+
+// COMPONENTS
+import Header from '../components/Header'
 
 export default function Home() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Header />
+    </>
   )
 }

@@ -1,0 +1,53 @@
+.headerContainer {
+  /* Box Model */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  /* Visual */
+  background: linear-gradient(to top, var(--dark-green), var(--green));
+}
+
+.navBar ul,
+.socialMedia ul  {
+  /* Box Model */
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar ul {
+  /* Box Model */
+  min-width: 25rem;
+
+  /* Visual */
+  color: var(--white);
+}
+.navBar ul li {
+  /* Tipography */
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.socialMedia ul {
+  min-width: 13rem;
+}
+.socialMedia ul li a {
+  /* Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+
+  /* Visual */
+  background: var(--white);
+  border-radius: 50%;
+}
+.socialMedia ul li svg {
+  font-size: 2rem;
+  color: var(--green);
+}
