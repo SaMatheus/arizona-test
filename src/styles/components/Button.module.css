@@ -20,6 +20,11 @@
   color: var(--white);
   transition: all .4s linear;
 }
+.buttonStyles svg,
+.buttonStyles span {
+  transition: all .4s linear;
+}
+
 .buttonStyles svg {
   /* Box Model */
   font-size: 1.6rem;
