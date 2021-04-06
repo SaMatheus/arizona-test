@@ -1,6 +1,7 @@
+/* Banner Container */
 .bannerContainer {
   /* Box Model */
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,6 +18,9 @@
   align-items: flex-start;
   height: 18.5rem;
   width: 55%;
+
+  /* Position */
+  transform: translateX(15rem);
 }
 .contentBox h1 {
   /* Tipography */
@@ -29,7 +33,7 @@
 }
 .contentBox p {
   /* Box Model */
-  width: 90%;
+  width: 75%;
 
   /* Tipography */
   font-size: 1.6rem;
@@ -44,5 +48,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 43rem;
+}
+
+/* Social Media Container */
+.socialMediaContainer {
+  /* Box Model */
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  align-items: center;
+
+  /* Visual */
+  background: var(--background2);
+}
+.socialMediaContainer img {
+  /* Box Model */
   width: 80%;
+  justify-self: center;
+
+  /* Visual */
+  filter: grayscale(1);
+  opacity: .2;
+  transition: all 0.2s linear;
+}
+.socialMediaContainer img:hover {
+  /* Visual */
+  filter: grayscale(0);
+  opacity: 1;
 }

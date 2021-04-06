@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <section className={styles.bannerContainer}>
         <div className={styles.contentBox}>
-          <h1>Take Photos Like a Pro</h1>
+          <h1>Take Photos Like a Pro.</h1>
           <p>With only your iphone and capture app you can take stunning image like a Professional Photographer</p>
           <div>
             <Button>
@@ -27,6 +27,12 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </section>
+      <section className={styles.socialMediaContainer}>
+        <img src="/icons/google.png" alt=""/>
+        <img src="/icons/facebook.png" alt=""/>
+        <img src="/icons/yahoo.png" alt=""/>
+        <img src="/icons/paypal.png" alt=""/>
       </section>
     </>
   )
