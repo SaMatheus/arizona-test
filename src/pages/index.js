@@ -8,6 +8,7 @@ import Button from '../components/Button'
 // ICONS
 import { DiApple, DiAndroid } from "react-icons/di";
 import { FiPlay } from "react-icons/fi";
+import particularsData from '../data/particularsData';
 
 
 export default function Home() {
@@ -77,6 +78,17 @@ export default function Home() {
             <a href="/">get the app</a>
           </div>
         </div>
+      </section>
+      <section className={styles.particularsGridContainer}>
+        {particularsData.map(item => {
+          return (
+            <div className={styles.item}>
+              <img src={item.img} alt=""/>
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+            </div>
+          )
+        })}
       </section>
     </>
   )
