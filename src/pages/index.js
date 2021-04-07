@@ -7,6 +7,7 @@ import { useState } from 'react'
 // COMPONENTS
 import Header from '../components/Header'
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 
 // ICONS
 import { DiApple, DiAndroid } from "react-icons/di";
@@ -17,7 +18,6 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 // DATA
 import particularsData from '../data/particularsData';
 import testimonialData from '../data/testimonialData';
-import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
               <p>Morbi quisque conubia lorem, ultrices.</p>
             </div>
             <div>
-              <img src="/icons/Video Camera.svg" alt=""/>
+              <img src="/icons/Painting_icon.svg" alt=""/>
               <p>Quis amet aptent nam, gravida.</p>
             </div>
             <div>
