@@ -10,6 +10,9 @@
 
   /* Visual */
   background: linear-gradient(to top, var(--dark-green), var(--green));
+
+  /* Position */
+  position: relative;
 }
 
 .navBar ul,
@@ -50,4 +53,64 @@
 .socialMedia ul li svg {
   font-size: 2rem;
   color: var(--green);
+}
+
+/* NAVBAR MOBILE */
+.menuIcon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.menuIcon svg {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+@media screen and (max-width: 450px) {
+  .menuIcon {
+    display: flex;
+  }
+
+  .hiddenMenuIcon {
+    display: none;
+  }
+
+  .navBar ul {
+    /* Box Model */
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    /* Position */
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    bottom: -50vh;
+
+    /* Visual */
+    background: var(--green);
+  }
+  .navBar ul li {
+    /* Tipography */
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .navBarMobile {
+    /* Box Model */
+    height: 50vh;
+    width: 100%;
+  
+    /* Position */
+    position: absolute;
+    left: 0;
+    bottom: -50vh;
+    z-index: 100;
+  
+    /* Visual */
+    background: var(--green);
+  }
+
 }

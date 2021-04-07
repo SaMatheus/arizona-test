@@ -1,16 +1,39 @@
 // STYLES
 import styles from '../styles/components/Header.module.css'
 
+// HOOKS
+import { useState, useEffect } from 'react'
+
 // ROUTER
 import Link from 'next/link'
 
 // ICONS
 import { TiSocialFacebook, TiSocialTwitter, TiSocialGooglePlus } from "react-icons/ti";
+import { HiMenuAlt1, HiX } from "react-icons/hi";
 
 const Header = () => {
+  const [ windowMobile, setwindowMobile ] = useState(0)
+  const [ menuActive, setMenuActive ] = useState(true)
+
+  const isMobile = windowMobile <= 450
+
+  useEffect(() => {
+    const windowWidth = window.innerWidth
+    setwindowMobile(windowWidth)
+  }, [ ])
+
+  const handleClick = () => {
+    setMenuActive(!menuActive)
+  }
+
   return (
     <section className={styles.headerContainer}>
-      <div className={styles.navBar}>
+      {/* O MENU MOBILE NÃO IRÁ FUNCIONAR USANDO O MOBILE DO INPETOR, A MENOS QUE A 
+      PAGINA SEJA ATUALIZADA */}
+      <div className={styles.menuIcon}>
+        {menuActive ? <HiMenuAlt1 onClick={handleClick}/> : <HiX onClick={handleClick}/>}
+      </div>
+      <div className={styles.navBar }>
         <ul>
           <li>
             <Link href="#">
