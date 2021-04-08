@@ -28,12 +28,10 @@ const Header = () => {
 
   return (
     <section className={styles.headerContainer}>
-      {/* O MENU MOBILE NÃO IRÁ FUNCIONAR USANDO O MOBILE DO INPETOR, A MENOS QUE A 
-      PAGINA SEJA ATUALIZADA */}
       <div className={styles.menuIcon}>
-        {menuActive ? <HiMenuAlt1 onClick={handleClick}/> : <HiX onClick={handleClick}/>}
+        {!menuActive ? <HiMenuAlt1 onClick={handleClick}/> : <HiX onClick={handleClick}/>}
       </div>
-      <div className={styles.navBar }>
+      <div className={menuActive ? `${styles.navBar} ${styles.navBarActive}` : styles.navBar }>
         <ul>
           <li>
             <Link href="#">

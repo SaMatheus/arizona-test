@@ -75,6 +75,11 @@
     display: none;
   }
 
+  .headerContainer .navBarActive ul {
+    /* Position */
+    left: 0;
+  }
+
   .navBar ul {
     /* Box Model */
     height: 50vh;
@@ -86,31 +91,17 @@
     /* Position */
     position: absolute;
     z-index: 100;
-    left: 0;
+    left: -100%;
     bottom: -50vh;
 
     /* Visual */
     background: var(--green);
+    transition: all 0.2s linear;
   }
   .navBar ul li {
     /* Tipography */
     font-size: 2rem;
     font-weight: 500;
-  }
-
-  .navBarMobile {
-    /* Box Model */
-    height: 50vh;
-    width: 100%;
-  
-    /* Position */
-    position: absolute;
-    left: 0;
-    bottom: -50vh;
-    z-index: 100;
-  
-    /* Visual */
-    background: var(--green);
   }
 
 }
