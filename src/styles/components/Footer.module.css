@@ -29,3 +29,9 @@
 .footerStyles p strong {
   margin-left: .3rem;
 }
+
+@media screen and (max-width: 380px) {
+  .footerStyles {
+    padding: 1rem 0;
+  }
+}
